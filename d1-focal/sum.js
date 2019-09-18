@@ -2,7 +2,8 @@ const args = process.argv.slice(2);
 //console.log(args);
 
 let sum = function(x, y) {
-  return parseInt(x) + parseInt(y);
+  //You can even use "+" to transfer to number
+  return parsInt(x) + parsInt(y);
 };
 
 //args = [4, 5]
