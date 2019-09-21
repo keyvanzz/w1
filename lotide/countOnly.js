@@ -18,7 +18,6 @@ const countOnly = function() {
       numOfNames[firstNames[i]]++;
     }
   }
-  console.log(numOfNames);
   return numOfNames;
 };
 
