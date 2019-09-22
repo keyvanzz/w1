@@ -15,7 +15,7 @@ let sentence = "lighthouse in the house";
 sentence = sentence.replace(/\s+/g, ""); //Removes spaces from string
 const countLetters = function(text) {
   const result = {};
-  const letters = sentence.split("");
+  const letters = text.split("");
   for (let letter of letters) {
     letter = letter.toLowerCase(); //Converts to lower case
     if (result[letter]) {
