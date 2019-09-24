@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@keyvanzz/lotide",
+  "version": "1.0.2",
+  "description": "Contains all functions for our lotide project",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -16,6 +16,6 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
+  "author": "Keyvan",
   "license": "ISC"
 }

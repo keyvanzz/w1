@@ -21,6 +21,9 @@ const eqArrays = function(array1, array2) {
 };
 
 const words = ["ground", "control", "to", "major", "tom"];
+const words2 = ["control", "ground", "to", "major", "tom"];
+const num = [1, 2, 3];
+const num2 = ["1", "2", "3"];
 
 const map = function(array, callback) {
   const results = [];
@@ -30,14 +33,17 @@ const map = function(array, callback) {
   return results;
 };
 
-const results1 = map(words, function(word) {
-  return word[0];
-});
-
-console.log(results1);
-
 module.exports = map;
 
 // TEST CODE
+const results1 = map(words, function(word) {
+  return word[0];
+});
+const results2 = map(words, function(word) {
+  return word[0];
+});
+assertEqual(eqArrays(results1, results2), true);
+assertEqual(eqArrays(words, words2), false);
+assertEqual(eqArrays(num, num2), false);
 assertEqual(eqArrays(results1, ["g", "c", "t", "m", "t"]), true); // => should
 assertEqual(eqArrays(results1, ["r", "c", "t", "m", "o"]), true); // => should
