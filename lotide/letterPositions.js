@@ -1,4 +1,4 @@
-eqArrays = function(a, b) {
+const eqArrays = function(a, b) {
   if (a instanceof Array && b instanceof Array) {
     if (a.length != b.length)
       //ensuring correct length
@@ -15,7 +15,7 @@ eqArrays = function(a, b) {
   }
 };
 
-assertArraysEqual = function(a, b) {
+const assertArraysEqual = function(a, b) {
   if (eqArrays(a, b)) {
     console.log("this array is true");
   } else {
@@ -26,7 +26,7 @@ assertArraysEqual = function(a, b) {
 let quote = "Lighthouse Labs";
 quote = quote.replace(/\s+/g, ""); //removes spaces from string
 
-let letterPositions = function(sentence) {
+const letterPositions = function(sentence) {
   const results = {};
   const letters = sentence.split("");
 
@@ -39,5 +39,7 @@ let letterPositions = function(sentence) {
 
   return results;
 };
+
+module.exports = letterPositions;
 
 console.log(assertArraysEqual(letterPositions("Hello").e, [1]));

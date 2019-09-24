@@ -51,6 +51,8 @@ const eqObjects = function(object1, object2) {
   return true; //if all above parameters pass return true
 };
 
+module.exports = eqObjects;
+
 // TEST CODE
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };

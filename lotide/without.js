@@ -34,8 +34,10 @@ const without = function(originalArray, removeArray) {
   }
   return result;
 };
+
+module.exports = without;
+
 //TEST CODE
 // => [2, 3]
-
 eqArrays(without([1, 2, 3], [1]), [2, 3]); // => should
 eqArrays(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); // => should

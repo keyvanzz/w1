@@ -43,6 +43,8 @@ const result1 = countOnly(firstNames, {
   Fang: true
 });
 
+module.exports = countOnly;
+
 // TEST CODE
 assertEqual(result1["Jason"], 1);
 assertEqual(result1["Karima"], undefined);

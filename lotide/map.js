@@ -36,6 +36,8 @@ const results1 = map(words, function(word) {
 
 console.log(results1);
 
+module.exports = map;
+
 // TEST CODE
 assertEqual(eqArrays(results1, ["g", "c", "t", "m", "t"]), true); // => should
 assertEqual(eqArrays(results1, ["r", "c", "t", "m", "o"]), true); // => should

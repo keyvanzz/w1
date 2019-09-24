@@ -13,6 +13,7 @@ const assertEqual = function(actual, expected) {
 
 let sentence = "lighthouse in the house";
 sentence = sentence.replace(/\s+/g, ""); //Removes spaces from string
+
 const countLetters = function(text) {
   const result = {};
   const letters = text.split("");
@@ -29,5 +30,8 @@ const countLetters = function(text) {
   return result;
 };
 
+module.exports = countLetters;
+
 // TEST CODE
 console.log(countLetters(sentence));
+module.exports = assertEqual;
